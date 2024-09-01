@@ -22,15 +22,15 @@ export default function Home() {
   return (
       <>
         <header className="navbar justify-center my-5 fixed z-10">
-          <h1 className="text-3xl lg:text-5xl font-semibold">Advice</h1>
+          <h1 className="text-3xl lg:text-5xl font-semibold text-accent">Advice</h1>
         </header>
         <div className="flex justify-center min-w-full h-screen items-center align-middle p-2">
             <div className="card bg-slate-900 shadow-2xl">
               <div className="card-body flex items-center">
-                <h1 className="card-title lg:text-3xl text-xl text-center my-9">
+                <h1 className="card-title lg:text-3xl text-xl text-center my-9 text-accent">
                   {advice}
                 </h1>
-                <button className="btn btn-primary w-80 text-2xl" onClick={fetchAdvice}>
+                <button className="btn btn-primary w-80 text-2xl text-white" onClick={fetchAdvice}>
                   <h1>Give Me Some Advice</h1>
                 </button>
               </div>
